@@ -1,3 +1,35 @@
+/* et tout autre style que tu veux */
+#introduction {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#slides-container > section {
+  display: none;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#slides-container > section.active {
+  display: block;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,7 +45,12 @@ header {
 }
 
 section {
+  display: none;
   padding: 20px;
+}
+
+section.active {
+  display: block;
 }
 
 .project {
@@ -39,3 +76,4 @@ code {
   margin: 4px 0;
   font-family: "Courier New", monospace;
 }
+

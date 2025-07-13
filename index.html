@@ -12,13 +12,14 @@
     <h1>Créer un projet et l’envoyer sur GitHub</h1>
     <p>Par un développeur passionné</p>
   </header>
-
-  <section>
+  <section id="introduction">
     <h2>Introduction</h2>
     <p>Voici un guide étape par étape pour créer un projet local, le versionner avec Git, puis l'envoyer sur GitHub.</p>
   </section>
 
-  <section>
+  <!-- Conteneur des slides -->
+<main id="slides-container">
+  <section >
     <h2>Étapes complètes</h2>
 
     <div class="project">
@@ -71,11 +72,92 @@
     </div>
 
   </section>
+  <section>
+  <h2>Fusion de branches avec Git (git merge)</h2>
 
-  <footer>
-    <p>Contact : monemail@example.com</p>
-    <p>&copy; 2025 Mon Nom</p>
-  </footer>
+  <div class="project">
+    <h3>1. Créer une branche secondaire</h3>
+    <p>Travaille sur une fonctionnalité dans une autre branche :</p>
+    <code>git checkout -b ma-branche</code>
+  </div>
 
+  <div class="project">
+    <h3>2. Faire des modifications</h3>
+    <p>Ajoute/modifie des fichiers, puis enregistre :</p>
+    <code>git add .</code><br>
+    <code>git commit -m "Travail dans ma-branche"</code>
+  </div>
+
+  <div class="project">
+    <h3>3. Revenir sur la branche principale</h3>
+    <code>git checkout main</code>
+  </div>
+
+  <div class="project">
+    <h3>4. Fusionner la branche secondaire</h3>
+    <p>Fusionne les changements de <code>ma-branche</code> dans <code>main</code> :</p>
+    <code>git merge ma-branche</code>
+    <p>✔️ S'il n'y a pas de conflit, la fusion est automatique.</p>
+  </div>
+
+  <div class="project">
+    <h3>5. Résoudre les conflits (si besoin)</h3>
+    <p>Git t'indiquera les fichiers en conflit. Ouvre-les, choisis les bons morceaux de code, puis :</p>
+    <code>git add fichier_conflit.html</code><br>
+    <code>git commit</code>
+  </div>
+
+  <div class="project">
+    <h3>6. Pousser vers GitHub</h3>
+    <code>git push origin main</code>
+  </div>
+
+</section>
+<section>
+  <h2>Cloner un dépôt Git</h2>
+
+  <div class="project">
+    <h3>1. Trouver l’URL du dépôt GitHub</h3>
+    <p>Va sur la page GitHub du projet, clique sur <strong>Code</strong> puis copie l’URL HTTPS (exemple : <code>https://github.com/utilisateur/projet.git</code>).</p>
+  </div>
+
+  <div class="project">
+    <h3>2. Ouvrir un terminal et choisir le dossier</h3>
+    <p>Place-toi dans le dossier où tu veux mettre le projet cloné :</p>
+    <code>cd chemin/vers/ton/dossier</code>
+  </div>
+
+  <div class="project">
+    <h3>3. Cloner le dépôt</h3>
+    <p>Exécute la commande :</p>
+    <code>git clone https://github.com/utilisateur/projet.git</code>
+  </div>
+
+  <div class="project">
+    <h3>4. Aller dans le dossier cloné</h3>
+    <p>Le dépôt est téléchargé dans un nouveau dossier :</p>
+    <code>cd projet</code>
+  </div>
+
+  <div class="project">
+    <h3>5. Travailler sur le projet</h3>
+    <p>Tu peux maintenant modifier les fichiers, faire des commits, et pousser les changements.</p>
+  </div>
+
+</section>
+</main>
+<nav>
+    <button id="prevBtn">Précédent</button>
+    <button id="nextBtn">Suivant</button>
+</nav>
+
+
+  
+<script src="script.js"></script>
+<footer>
+    <p>Email : adropeley@gmail.com</p>
+    <p>Contact : 00225 07 08 45 43 05</p>
+    <p>&copy; 2025 ADRO PELEY</p>
+</footer>
 </body>
 </html>
